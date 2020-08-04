@@ -24,10 +24,12 @@ html, body {
 
 .modal {
 max-width: 600px;
-background: orange;
+background: white;
 padding: 20px;
 height: 200px;
-margin: 0 auto;
+margin: 0 auto; 
+position: relative;
+margin-top: 30%; 
 }
 
 /** overlay -> we also used an ID for this, so do the same as above **/
@@ -45,3 +47,29 @@ margin: 0 auto;
   - rgba is complex and it's a bit of a time sink to remember all the values, look at rgba colour values online, or rgba colour convetors, or even colour palettes!
   - if you come from a design background, you'll know you can convert HEX values (e.g. #ffffff to rgba using a convertor)
 */
+
+/** 
+  Overlay: #overlay
+
+  1) Add a width and a height of 100%
+  2) Position absolute (allows us to place any element exactly where we want it)
+  3) Set top, left, bottom, right to 0
+  4) Add a background colour of black
+  5) Add position relative to #modal so that it's relative to #overlay
+  6) Put the background of #modal to white (temp background no longer needed)
+  7) Add top: 30% to #modal
+**/
+.overlay {
+  display: none; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  
+
+ 
+}
