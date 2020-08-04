@@ -30,3 +30,11 @@ openModal.addEventListener( 'click', overlayToBlock )
   2) Add an event listener of "click"
   3) Use document.getElementById to target "overlay" and change the style.display to "none"
 **/
+
+const closeModal = document.querySelector('#close-modal')
+
+const overlayToNone = () => {
+  overlay.style.display = 'none'
+}
+
+closeModal.addEventListener('click', overlayToNone)
