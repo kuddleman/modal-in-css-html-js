@@ -8,11 +8,27 @@ html, body {
 /** we need to style our open and close buttons, re-use the comma , to target both buttons **/
 #open-modal, #close-modal {
   background: royalblue;
+  font-size: 20px;
   color: white;
-  padding: 20px;
+  padding: 15px;
+  cursor: pointer;
 }
 
-/** modal -> remember we used an ID for this div? we can target it by doing #modal **/
+/** modal -> remember we used an ID for this div? we can target it by doing #modal 
+ 1) Add a temporary background colour of 'orange'
+  2) Add a padding of 20px
+  3) Add a height of 200px
+  4) Add a margin of 0 & auto to make sure our Modal is centered
+  5) Add a max-width of 600px
+**/
+
+.modal {
+max-width: 600px;
+background: orange;
+padding: 20px;
+height: 200px;
+margin: 0 auto;
+}
 
 /** overlay -> we also used an ID for this, so do the same as above **/
 /** the overlay must overtake the screen, so how would you make the overlay 100% height and 100% width so it fills the entire screen? it also must position itself above everything else!
